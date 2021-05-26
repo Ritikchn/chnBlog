@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Header from "./Header";
 import MainArea from "./MainArea";
-import {  dbDataContext } from "./ContextApi";
+import { dbDataContext } from "./ContextApi";
 import Footer from "./Footer";
 import "./css/index.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -27,7 +27,7 @@ function App() {
       setMount(false);
     };
   }, []);
- 
+
   if (loading) return "Loading...";
   return (
     <div className="App">
@@ -36,10 +36,10 @@ function App() {
 
         <BrowserRouter>
           <Switch>
-            <Route path="/not-available">
+            <Route path="https://chnblog.netlify.app/not-available">
               <NotAvailable />
             </Route>
-            <Route path="/:post">
+            <Route path="https://chnblog.netlify.app/:post">
               <SinglePostPage />
             </Route>
             <Route exact path="/">
