@@ -8,7 +8,7 @@ function PostArea() {
   useEffect(() => {
     const abortController = new AbortController();
     const signal1 = abortController.signal;
-    fetch("/getData", { signal: signal1 })
+    fetch("https://blog-appserver.herokuapp.com/getData", { signal: signal1 })
       .then((res) => res.json())
       .then((res) => updateDb(res.test))
       .finally(() => setLoading(false));
