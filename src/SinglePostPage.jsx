@@ -1,10 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./css/SinglePost.css";
 import CommentBox from "./commentsComp/CommentBox";
 import { dbDataContext } from "./ContextApi";
 
 function SinglePostPage() {
+  const[loading,setLoading]=useState(true);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -12,7 +13,7 @@ function SinglePostPage() {
   var { post } = useParams();
 
   const result = DbData.find(({ id }) => id === parseInt(post));
-
+if (loading) return "Loading"
   return (
     <div className="singlepost-container">
       <div className="singlepost-img">
