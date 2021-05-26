@@ -7,10 +7,7 @@
   from{opacity: 0;}
   to{opacity: 100%;}
 }
-.App{
-  animation-name: appear;
-  animation-duration: 3s
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');/*  p -->font*/
 @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');/*  h2 -->font*/
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
