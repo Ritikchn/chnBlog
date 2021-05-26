@@ -1,0 +1,88 @@
+.commentbox-container {
+  /* min-width: 400px; */
+  border-radius: 13px;
+  padding: 2% 2%;
+  margin-left: 15%;
+  width: 70%;
+  margin-bottom: 3%;
+  box-shadow: 0 16px 43px 0 rgba(0, 0, 0, 0.1), 0 10px 10px 0 rgba(0, 0, 0, 0);
+}
+.commentlist-container {
+  overflow-y: scroll;
+  height: 400px;
+}
+.commentform-container {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  COMMENT INPUT----------------------- */
+input[type="text"] {
+  font-size: 1rem;
+  width: 70%;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-right: 5px;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+/* COMMENT INPUT ----------------------- */
+/* COMMENT BUTTON  ----------------------- */
+button[type="submit"] {
+  width: 109px;
+  height: 40px;
+  background-color: rgb(51, 49, 49);
+  border: 2px solid black;
+  font-size: 16px;
+  margin: 0 2%;
+  color: white;
+  transition-duration: 0.4s;
+  padding: 6px 13px;
+}
+button[type="submit"]:hover {
+  background-color: white; /* Green */
+  color: black;
+}
+/* COMMENT BUTTON  ----------------------- */
+/* COMMENTLIST  -------------------------- */
+.singlecomment-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 24px 4%;
+  text-align: left;
+  animation-name: comment;
+  animation-duration: 2s;
+}
+@keyframes comment{
+  from {width:0}
+  to{width: 90%;}
+}
+.singlecomment-img {
+  flex: 1;
+  margin-right: 25px;
+}
+.singlecomment-img img {
+  border-radius: 50%;
+}
+.singlecomment-text {
+  flex: 7;
+}
+/* COMMENTLIST  -------------------------- */
+@media only screen and (max-width: 650px) {
+  .commentbox-container {
+    margin-left: 2%;
+    width: 100vw;
+    margin-bottom: 0%;
+    padding-bottom: 11%;
+  }
+  button[type="submit"] {
+    margin: 8px 5px;
+    margin-right: 11%;
+    width: 109px;
+    height: 20px;
+  }
+}

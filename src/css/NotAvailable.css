@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+.not-available-cont {
+  text-align: center;
+  margin: 3% 3%;
+}
+.not-available-cont img {
+  overflow: hidden;
+}
+.not-available-cont h1 {
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+}
+@media only screen and (max-width: 600px) {
+  .not-available-cont img {
+    width: 61vw;
+    height: 40vh;
+  }
+}

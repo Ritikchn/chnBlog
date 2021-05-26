@@ -1,0 +1,36 @@
+.singlepost-container {
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+.singlepost-img {
+  overflow: hidden;
+  margin: 4% 2%;
+}
+.singlepost-img img {
+  max-width: 800px;
+  border-radius: 20px;
+  width: 80%;
+  box-shadow: 0 11px 21px 0 rgba(0, 0, 0, 0.2),
+    0 13px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.singlepost-heading {
+  margin: 3% 10%;
+}
+.singlepost-paragraph {
+  margin: 3% 10%;
+}
+.singlepost-container h1{
+  font-size: 2rem;
+  font-family: 'Domine', serif;
+}
+.singlepost-container p{
+  font-size: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .singlepost-img img {
+    width: 100%;
+  }
+}
