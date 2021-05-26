@@ -36,10 +36,10 @@ function App() {
 
         <BrowserRouter>
           <Switch>
-            <Route path="https://chnblog.netlify.app/not-available">
+            <Route path="/not-available">
               <NotAvailable />
             </Route>
-            <Route path="https://chnblog.netlify.app/:post">
+            <Route path="/:post">
               <SinglePostPage />
             </Route>
             <Route exact path="/">
