@@ -29,7 +29,7 @@ function Header(props) {
   const onFailure = (res) => {
     console.log("[Login failed] res:", res);
   };
-  const key ="950808696686-2a0tmdu6sc823b4f3uso2sp74meo4tta.apps.googleusercontent.com";
+  const key =process.env.REACT_APP_API_KEY;
 
   return (
     <div className="Header-parent">
